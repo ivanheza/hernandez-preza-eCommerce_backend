@@ -19,7 +19,7 @@ _CARRITO_ "/api/carrito"
 -  POST "/" **Agrega un carrito nuevo al archivo cartlist.txt**
 -  DELETE "/:idcarrito" **Borra el carrito con el ID selecicionado**
 -  GET "/:idcarrito/productos" **Muestra todos los productos dentro de un carrito con el ID solicitado**
--  GET "/:idcarrito/productos" **Agrega un producto específico al carrito con un ID específico**
+-  POST "/:idcarrito/productos" **Agrega un producto específico al carrito con un ID específico**
 -  DELETE "/:idcarrito/productos/:IDproducto" **Borra un producto específico(id) en el carrito con el ID selecicionado**
 
 > > > > Importante > PARA LA PRUEBA DE ENDPOINTS GET PUT Y DELETE SE UTILIZO POSTMAN
