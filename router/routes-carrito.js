@@ -2,17 +2,8 @@ const {Router} = require("express")
 const cartController = require("../controllers/controller-carrito")
 const router = Router()
 
-let admin = false
-let login = (req, res, next) => {
-   if (!admin) {
-      console.log(req.path)
-      res.status(403)
-      return res.send({error: -1, descripcion: `ruta no autorizada`})
-   }
-   next()
-}
-
 //GET PRUEBA LISTA CARRITOS
+
 router.get("/", cartController.getAll)
 
 // POST NEW CART
