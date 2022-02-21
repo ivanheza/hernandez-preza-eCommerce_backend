@@ -16,8 +16,6 @@ app.use("/api/carrito", cartRoutes)
 //espacio Publico del servidor
 app.use(express.static("./public"))
 
-let admin = true
-
 // HomeROUTE
 app.get("/", (req, res) => {
    // Here user can also design an
